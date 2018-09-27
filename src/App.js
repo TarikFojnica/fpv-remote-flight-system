@@ -16,7 +16,7 @@ class App extends Component {
 		let bunny = PIXI.Sprite.fromImage(pointer, {width: 100, height: 10});
 
 // center the sprite's anchor point
-		bunny.anchor.set(0, 0);
+		bunny.anchor.set(0.5, 0.1);
 
 // move the sprite to the center of the screen
 		bunny.x = app.screen.width / 2;
@@ -36,13 +36,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
         <div className="clock" id="clock">
           <img src={background} alt=""/>
         </div>
