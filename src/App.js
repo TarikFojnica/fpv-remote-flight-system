@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import arrow from './images/right-arrow.png';
+import pointer from './images/tachometer/pointer.png';
+import background from './images/tachometer/background.svg';
 import jet from './images/jet.png';
 import './App.css';
 import * as PIXI from 'pixi.js'
@@ -8,14 +9,14 @@ import * as PIXI from 'pixi.js'
 
 class App extends Component {
   componentDidMount() {
-		const app = new PIXI.Application(1000, 700, {backgroundImage : jet});
+		const app = new PIXI.Application(400, 400, {transparent: true});
 		document.getElementById('clock').appendChild(app.view);
 
 // create a new Sprite from an image path
-		let bunny = PIXI.Sprite.fromImage(arrow);
+		let bunny = PIXI.Sprite.fromImage(pointer, {width: 100, height: 10});
 
 // center the sprite's anchor point
-		bunny.anchor.set(0, 0.5);
+		bunny.anchor.set(0, 0);
 
 // move the sprite to the center of the screen
 		bunny.x = app.screen.width / 2;
@@ -42,7 +43,9 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <div class="clock" id="clock"></div>
+        <div className="clock" id="clock">
+          <img src={background} alt=""/>
+        </div>
       </div>
     );
   }

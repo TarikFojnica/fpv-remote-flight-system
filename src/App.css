@@ -28,5 +28,11 @@
 }
 
 .clock {
-  background-color: red;
+  position: relative;
+  background-color: #222222;
+}
+
+.clock img {
+  position: absolute;
+  width: 400px;
 }
