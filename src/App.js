@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import pointer from './images/tachometer/pointer.png';
 import background from './images/tachometer/background.svg';
 import jet from './images/jet.png';
