@@ -24,11 +24,13 @@ class App extends Component {
 		app.stage.addChild(pointerArrow);
 
 // Listen for animate update
+// 		app.ticker.speed = 60;
 		app.ticker.add(function(delta) {
 			// just for fun, let's rotate mr rabbit a little
 			// delta is 1 if running at 100% performance
 			// creates frame-independent transformation
-			pointerArrow.rotation += 0.1 * delta;
+			pointerArrow.rotation += 0.05 * delta;
+			console.log(delta)
 		});
   }
 
