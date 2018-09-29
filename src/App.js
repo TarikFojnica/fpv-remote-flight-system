@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './assets/styles/main.css';
 
 import AirspeedIndicator from './components/AirspeedIndicator'
 
