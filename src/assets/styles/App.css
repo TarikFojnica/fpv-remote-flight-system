@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background: url("../images/background.jpg");
+  height: 100vh;
 }
 
 .App-logo {
@@ -29,7 +31,7 @@
 
 .clock {
   position: relative;
-  background-color: #222222;
+
 }
 
 .clock img {
