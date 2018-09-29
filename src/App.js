@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import pointer from './images/tachometer/pointer.png';
-import background from './images/tachometer/background.svg';
+import pointer from './images/assets/images/tachometer/pointer.png';
+import background from './images/assets/images/tachometer/background.svg';
 import jet from './images/jet.png';
 import './App.css';
 import * as PIXI from 'pixi.js'
