@@ -5,7 +5,7 @@ import * as PIXI from 'pixi.js'
 
 class AirspeedIndicator extends Component {
 	componentDidMount() {
-		const app = new PIXI.Application(400, 400, {transparent: true});
+		const app = new PIXI.Application(200, 200, {transparent: true});
 		document.getElementById('clock').appendChild(app.view);
 
 // create a new Sprite from an image path

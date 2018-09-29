@@ -8,7 +8,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-				<AirspeedIndicator/>
+				<div className="controls">
+          <AirspeedIndicator/>
+          <AirspeedIndicator/>
+          <AirspeedIndicator/>
+        </div>
       </div>
     );
   }
